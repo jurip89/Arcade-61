@@ -1,0 +1,5 @@
+export {default as JuriGame} from './Juri/JuriPage'
+export {default as JuanGame} from './Juan/JuanPage'
+export {default as MariaGame} from './Maria/MariaPage'
+export {default as SimeonGame} from './Simeon/SimeonPage'
+export {default as Home} from './Home/Home'
