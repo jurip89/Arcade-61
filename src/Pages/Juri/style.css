@@ -1,0 +1,24 @@
+.constainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.grid {
+  margin: 10vh auto;
+  background-color: cornflowerblue;
+  width: 500px;
+  height: 500px;
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space {
+  width: 45px;
+  height: 45px;
+}
+
+.invader {
+  background-color: red;
+  border-radius: 50%;
+}
