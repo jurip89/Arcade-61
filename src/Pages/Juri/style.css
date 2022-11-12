@@ -1,0 +1,41 @@
+.constainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.grid {
+  margin: 10vh auto;
+  background-color: cornflowerblue;
+  width: 500px;
+  height: 500px;
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.win{
+  margin: 10vh auto;
+    background-color: cornflowerblue;
+    width: 500px;
+    height: 500px;
+    border: solid black 1px;
+}
+.win p{
+  margin: 10vh auto;
+  font-size: 4rem;
+}
+.space {
+  width: 25px;
+  height: 25px;
+  border: 1px solid red
+}
+
+.invader {
+  background-color: red;
+  border-radius: 50%;
+}
+.laser{
+  background-color: yellow;
+}
+.shooter{
+  background-color: black;
+}
