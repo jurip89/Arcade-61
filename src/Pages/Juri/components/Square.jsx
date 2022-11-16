@@ -1,13 +1,12 @@
 import React from "react";
 
-const Square = ({ shooter, name, invader, i,laser }) => {
+const Square = ({ shooter, name, invader, i,laser,boom }) => {
   return (
-      <div className={`${name} ${shooter? "shooter":''} ${invader? "invader":''} ${laser?'laser': ''}`}
+      <div className={`${name} ${shooter? "shooter":''} ${laser?'laser': ''}${invader? "invader":''} ${boom?'boom':''}`}
           
         
-      >
-      {i}
-    </div>
+      />
+     
   );
 };
 
