@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Tetris from "./Tetris";
 
 const JuanPage = () => {
-  return (
-    <div>JuanPage</div>
-  )
-}
+  return <Tetris />;
+};
 
-export default JuanPage
+export default JuanPage;
