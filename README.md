@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `npm i`
 
-the dependecies will be installed and you can run with `npm start`
+The dependecies will be installed and you can run with `npm start`
 
 ## What has been done ?
 
@@ -24,9 +24,9 @@ Do we want to do this prohject also in Native?
 ## Tasks
 
 Juan: Tetris
-Maria: Memory
+Maria: 4 in a row
 Simeon: ???????
-Juri: ??????
+Juri: Space Invaders
 
 ## Tech Used
 
