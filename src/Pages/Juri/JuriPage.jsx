@@ -13,7 +13,7 @@ const JuriPage = () => {
   const [shooter, setShooter] = useState(260);
   const [laser, setLaser] = useState(null);
   const [level, setLevel] = useState(0);
-  const [timeMovement, setTimeMovement] = useState(1400);
+  const [timeMovement, setTimeMovement] = useState(900);
   const [laserSpeed, setlaserSpeed] = useState(60);
   console.log(result);
   console.log(alienInvaders);
@@ -107,7 +107,7 @@ const JuriPage = () => {
       setLevel(level + 1)
       setResult(0)
     } else {
-      setlaserSpeed(Math.floor(laserSpeed*1.25))
+      setlaserSpeed(Math.floor(laserSpeed*0.75))
       setTimeMovement(Math.floor(timeMovement * 0.85))
       setInvadersQuantity(invadersQuantity + 18)
       const newArr = [];
