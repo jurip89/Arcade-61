@@ -100,12 +100,13 @@ const Tetris = () => {
     }
   };
 
-  return (
+  return (<div style={{display: "flex", flexDirection: "row", marginLeft: "150px"}}>
+          <h1>Tetris</h1>
     <StyledTetrisWrapper
-      role="button"
-      tabIndex="0"
-      onKeyDown={e => move(e)}
-      onKeyUp={keyUp}
+    role="button"
+    tabIndex="0"
+    onKeyDown={e => move(e)}
+    onKeyUp={keyUp}
     >
       <StyledTetris>
         <Stage stage={stage} />
@@ -123,7 +124,7 @@ const Tetris = () => {
         </aside>
       </StyledTetris>
     </StyledTetrisWrapper>
-  );
+    </div>);
 };
 
 export default Tetris;
