@@ -13,7 +13,7 @@ const JuriPage = () => {
   const [shooter, setShooter] = useState(260);
   const [laser, setLaser] = useState(null);
   const [level, setLevel] = useState(0);
-  const [timeMovement, setTimeMovement] = useState(1400);
+  const [timeMovement, setTimeMovement] = useState(900);
   const [laserSpeed, setlaserSpeed] = useState(60);
   console.log(result);
   console.log(alienInvaders);
@@ -56,10 +56,10 @@ const JuriPage = () => {
   //effect for movement invaders
   useEffect(() => {
     if (alienInvaders?.length > 0) startGame();
-  //  if (!alienInvaders) {
-  //      clearInterval(invadersMovement);
-  //    setResult(0)
-  //    }
+    //  if (!alienInvaders) {
+    //      clearInterval(invadersMovement);
+    //    setResult(0)
+    //    }
     //  if (alienInvaders?.length === 0) {
     //    setLevel(level+1)
     //    clearInterval(invadersMovement)
@@ -104,26 +104,30 @@ const JuriPage = () => {
         newArr.push(i);
       }
       setAlienInvaders(newArr);
-      setLevel(level + 1)
-      setResult(0)
+      setLevel(level + 1);
+      setResult(0);
     } else {
-      setlaserSpeed(Math.floor(laserSpeed*1.25))
-      setTimeMovement(Math.floor(timeMovement * 0.85))
-      setInvadersQuantity(invadersQuantity + 18)
+      setlaserSpeed(Math.floor(laserSpeed * 1.25));
+      setTimeMovement(Math.floor(timeMovement * 0.85));
+      setInvadersQuantity(invadersQuantity + 18);
       const newArr = [];
       for (let i = 0; i <= invadersQuantity; i++) {
         newArr.push(i);
       }
       setAlienInvaders(newArr);
-      setLevel(level + 1)
+      setLevel(level + 1);
     }
   };
 
   return (
     <div className="container">
       <div className="navbar">
-        <div className="score"><h2>SCORE: { result}</h2></div>
-        <div className="level"><h2>LEVEL: {level }</h2></div>
+        <div className="score">
+          <h2>SCORE: {result}</h2>
+        </div>
+        <div className="level">
+          <h2>LEVEL: {level}</h2>
+        </div>
       </div>
       <div
         className="grid"
