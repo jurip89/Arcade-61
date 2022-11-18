@@ -56,10 +56,10 @@ const JuriPage = () => {
   //effect for movement invaders
   useEffect(() => {
     if (alienInvaders?.length > 0) startGame();
-  //  if (!alienInvaders) {
-  //      clearInterval(invadersMovement);
-  //    setResult(0)
-  //    }
+    //  if (!alienInvaders) {
+    //      clearInterval(invadersMovement);
+    //    setResult(0)
+    //    }
     //  if (alienInvaders?.length === 0) {
     //    setLevel(level+1)
     //    clearInterval(invadersMovement)
@@ -104,8 +104,8 @@ const JuriPage = () => {
         newArr.push(i);
       }
       setAlienInvaders(newArr);
-      setLevel(level + 1)
-      setResult(0)
+      setLevel(level + 1);
+      setResult(0);
     } else {
       setlaserSpeed(Math.floor(laserSpeed*0.75))
       setTimeMovement(Math.floor(timeMovement * 0.85))
@@ -115,15 +115,19 @@ const JuriPage = () => {
         newArr.push(i);
       }
       setAlienInvaders(newArr);
-      setLevel(level + 1)
+      setLevel(level + 1);
     }
   };
 
   return (
     <div className="container">
       <div className="navbar">
-        <div className="score"><h2>SCORE: { result}</h2></div>
-        <div className="level"><h2>LEVEL: {level }</h2></div>
+        <div className="score">
+          <h2>SCORE: {result}</h2>
+        </div>
+        <div className="level">
+          <h2>LEVEL: {level}</h2>
+        </div>
       </div>
       <div
         className="grid"
