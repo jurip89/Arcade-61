@@ -1,0 +1,72 @@
+.board {
+  margin: auto;
+  display: grid;
+  justify-content: stretch;
+  max-width: 450px;
+  height: 400px;
+  background-color: #0066ff;
+  
+}
+.drop-button {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.cell {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.players {
+  text-align: center;
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+}
+
+.bn30 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #ffeba7, #ffeba7);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.bn30 .text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #ffeba7, #ffeba7);
+}
+
+.bn30:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+
+.bn30:hover {
+  background-image: linear-gradient(-45deg, #ffeba7, #ffeba7);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+.bn30:hover .text {
+  background-image: linear-gradient(-45deg, #ffeba7, #ffeba7);
+}
