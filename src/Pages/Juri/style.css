@@ -1,41 +1,74 @@
-.constainer {
+.container {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  
 }
 .grid {
-  margin: 10vh auto;
-  background-color: cornflowerblue;
+  margin: 5vh auto;
+  background-image: url(https://img.freepik.com/free-photo/3d-space-background-with-fictional-planets_1048-10504.jpg?w=2000&t=st=1668624119~exp=1668624719~hmac=5c25ee23db382efab07b33501b7ae43ccb5e6a537dae6d9b277960cf2e7cc526);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   width: 500px;
   height: 500px;
   border: solid black 1px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-.win{
-  margin: 10vh auto;
-    background-color: cornflowerblue;
-    width: 500px;
-    height: 500px;
-    border: solid black 1px;
-}
-.win p{
-  margin: 10vh auto;
+
+p {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
   font-size: 4rem;
 }
 .space {
   width: 25px;
   height: 25px;
-  border: 1px solid red
+  border: 1px solid transparent;
 }
 
 .invader {
-  background-color: red;
+  background-image: url("./imgs/alienIcon.png");
+  background-position: center;
+  background-size: contain;
   border-radius: 50%;
 }
-.laser{
-  background-color: yellow;
+.laser {
+  background-image: url("./imgs/shot.png");
+  background-position: center;
+  background-size: contain;
 }
-.shooter{
-  background-color: black;
+.laserinvader{
+    background-image: url("./imgs/explosion.png");
+      background-position: center;
+      background-size: contain;
+}
+.shooter {
+  background-image: url("./imgs/rocket.png");
+  background-position: center;
+  background-size: contain;
+}
+.winning-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 0 auto;
+  background-color: blue;
+  font-size: 4rem;
+  color: white;
+  border-radius: 9px;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar{
+  width: 80%;
+  margin: 3vh auto;
+  display: flex;
+  justify-content: space-between;
 }
